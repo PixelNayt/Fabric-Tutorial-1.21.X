@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "PixelNayt's First ever Minecraft Mod!",
+	"authors": [
+		"PixelNayt"
+	],
+	"contact": {
+		"homepage": "https://x.com/PixelNayt",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pixelnayt.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"com.pixelnayt.tutorialmod.TutorialModDataGenerator"
+		],
+		"client":[
+			"com.pixelnayt.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
