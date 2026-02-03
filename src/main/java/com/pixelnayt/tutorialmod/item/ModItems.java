@@ -24,8 +24,6 @@ public class ModItems {
         //Add to Creative Mode Tab
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(RAW_PINK_GARNET);
         });
     }

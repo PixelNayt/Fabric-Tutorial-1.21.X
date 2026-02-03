@@ -1,5 +1,7 @@
 package com.pixelnayt.tutorialmod;
 
+import com.pixelnayt.tutorialmod.block.ModBlocks;
+import com.pixelnayt.tutorialmod.item.ModItemGroups;
 import com.pixelnayt.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +15,7 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
